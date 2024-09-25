@@ -1,0 +1,235 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #B2CDDE;
+    height: 850px;
+    width: 100%;
+}
+
+/* Header Styling */
+header {
+    position: relative;
+    background-color: #003B75;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    letter-spacing: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    overflow: hidden;
+}
+/* Animation added */
+header{
+    animation: fadeInScale 2s ease-in-out;
+}
+
+header > h1 {
+    font-variant: small-caps;
+    text-shadow: 0 0 20px white;
+    
+    /* Optional: Animate the h1 element as well */
+    animation: fadeInText 3s ease-in-out;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Video Corners */
+.video-corner {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+	object-fit: cover;
+    border-radius: 10px;
+	padding-top:20px;
+	padding-right:40px;
+	padding-left:40px;
+}
+
+.left-video {
+    top: 10px;
+    left: 10px;
+	
+}
+
+.right-video {
+    top: 10px;
+    right: 10px;
+}
+
+.video-corner video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+
+/* Define the keyframes for header animation */
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Define keyframes for the h1 animation (optional) */
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #02449B;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    height: 40px;
+    padding-bottom: 50px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #D1D1D1;
+    border-radius: 3px;
+    color: black;
+}
+
+/* Aside Styling */
+.aside-left {
+    background-size: 100% 100%; /* Use full size for background image */
+    height: 480px; /* Specific height for left aside */
+    animation: slider-left 20s infinite; /* Left aside animation */
+	padding-right:20px;
+}
+
+.aside-right {
+    background-size: 100% 100%; /* Use full size for background image */
+    height: 380px; /* Specific height for right aside */
+    animation: slider-right 20s infinite; /* Right aside animation */
+	padding:50px;
+}
+
+/* Container Styling */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;a
+    gap: 10px;
+    padding: 20px;
+}
+
+@keyframes slider-left {
+    0% {
+        background-image: url('udemy html,css,js.jpg');
+    }
+    25% {
+        background-image: url('udemy CSS Mastery.jpg');
+    }
+    50% {
+        background-image: url('Alison certificate.png');
+    }
+    75% {
+        background-image: url('HackerRank - SQL(Intermediate).png');
+    }
+    100% {
+        background-image: url('Geekster - Git and GitHub.png');
+    }
+}
+
+.aside-left {
+    animation: slider-left 8s infinite;
+}
+
+.aside-right {
+    animation: slider-right 8s infinite; 
+}
+
+@keyframes slider-right {
+    0% {
+        background-image: url('html.png');
+    }
+    25% {
+        background-image: url('css.png');
+    }
+    50% {
+        background-image: url('java.png');
+    }
+    75% {
+        background-image: url('sql.png');
+    }
+    100% {
+        background-image: url('github.png');
+    }
+}
+
+/* Footer Styling */
+footer {
+    background-color: #003B75;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+
+
+/* Main Content Styling */
+iframe {
+	padding-left:10px;
+    width: 100%;
+    height: 480px;
+    border: none;
+}

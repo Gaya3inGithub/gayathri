@@ -1,0 +1,37 @@
+/* home.css */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #B4F4FF; /* Light background for better contrast */
+    color: #444; /* Slightly darker text for readability */
+}
+
+h2 {
+    color: #333;
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 2em; /* Increase font size for the heading */
+    border-bottom: 2px solid #333; /* Add a bottom border */
+    padding-bottom: 10px; /* Space below the border */
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px; /* Space below paragraphs */
+}
+
+.container {
+    max-width: 800px; /* Limit the width of the content */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+
+}
+
+footer {
+    text-align: center; /* Center footer text */
+    margin-top: 30px; /* Space above footer */
+    font-size: 14px; /* Smaller font for footer */
+    color: #666; /* Lighter color for footer text */
+}

@@ -1,0 +1,49 @@
+/* work-experience.css */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color:white; /* Light background for contrast */
+    color: #444; /* Darker text for readability */
+}
+
+h2 {
+    color: #333;
+    text-align: center; /* Center the main heading */
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 2.5em; /* Larger font size for the main heading */
+}
+
+h3 {
+    color: #2c3e50; /* Darker color for subheadings */
+    margin-top: 30px; /* Space above subheadings */
+    margin-bottom: 5px; /* Space below subheadings */
+    font-size: 1.8em; /* Increase font size for subheadings */
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6; /* Improved line height for readability */
+    margin: 5px 0 15px; /* Margins above and below paragraphs */
+}
+
+ul {
+    list-style-type: disc; /* Default bullet points */
+    padding-left: 20px; /* Indentation for list items */
+}
+
+li {
+    font-size: 16px; /* Font size for list items */
+    margin-bottom: 10px; /* Space between list items */
+    line-height: 1.5; /* Improved line height for list items */
+}
+
+/* Optional: Add a container for better alignment */
+.container {
+    max-width: 800px; /* Limit the width of the content */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+    background: #B9FDED; /* White background for the content area */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
